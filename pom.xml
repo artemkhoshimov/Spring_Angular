@@ -78,7 +78,7 @@
             <properties>
                 <url>jdbc:postgresql://127.0.0.1:5432/postgres</url>
                 <username>postgres</username>
-                <password>123</password>
+                <password>321</password>
             </properties>
         </profile>
     </profiles>
@@ -193,8 +193,8 @@
                     <artifactId>frontend-maven-plugin</artifactId>
                     <version>1.10.0</version>
                     <configuration>
-                        <nodeVersion>v12.18.1</nodeVersion>
-                        <npmVersion>6.14.5</npmVersion>
+                        <nodeVersion>v15.0.1</nodeVersion>
+                        <npmVersion>7.0.3</npmVersion>
                     </configuration>
                 </plugin>
             </plugins>

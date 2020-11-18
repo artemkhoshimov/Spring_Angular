@@ -3,15 +3,13 @@
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
-    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.9.xsd ">
-
-    <changeSet id="20200622-00" author="Khoshimov">
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd ">
+    <changeSet id="20200622-01" author="Khoshimov">
         <tagDatabase tag="changelog-2.0"/>
     </changeSet>
 
-    <changeSet id="20200622-01" author="Khoshimov">
+    <changeSet id="20200622-02" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <sequenceExists sequenceName="STUDENT_ID_SEQ" schemaName="public"/>
@@ -23,7 +21,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200622-02" author="Khoshimov">
+    <changeSet id="20200622-03" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="STUDENT" schemaName="public"/>
@@ -53,7 +51,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200622-03" author="Khoshimov">
+    <changeSet id="20200622-04" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="TEACHER" schemaName="public"/>
@@ -81,7 +79,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200622-04" author="Khoshimov">
+    <changeSet id="20200622-05" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="USERS" schemaName="public"/>
@@ -94,7 +92,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200622-05" author="Khoshimov">
+    <changeSet id="20200622-06" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <sequenceExists sequenceName="COURSE_ID_SEQ" schemaName="public"/>
@@ -106,7 +104,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200622-06" author="Khoshimov">
+    <changeSet id="20200622-07" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="COURSE" schemaName="public"/>
@@ -137,7 +135,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200622-07" author="Khoshimov">
+    <changeSet id="20200622-08" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="STUDENT_TO_COURSE" schemaName="public"/>
@@ -157,7 +155,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200622-08" author="Khoshimov">
+    <changeSet id="20200622-09" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="LESSON" schemaName="public"/>
@@ -183,7 +181,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200622-09" author="Khoshimov">
+    <changeSet id="20200623-10" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="LESSON_TO_INSTRUMENT" schemaName="public"/>
@@ -204,7 +202,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200717-10" author="Khoshimov">
+    <changeSet id="20200717-11" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <and>
                 <tableExists tableName="LESSON" schemaName="public"/>
@@ -236,7 +234,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200717-11" author="Khoshimov">
+    <changeSet id="20200717-12" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <and>
                 <tableExists tableName="LESSON_TO_INSTRUMENT" schemaName="public"/>
@@ -252,7 +250,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="20200717-12" author="Khoshimov">
+    <changeSet id="20200717-13" author="Khoshimov">
     <preConditions onFail="MARK_RAN">
         <and>
             <tableExists tableName="LESSON_TO_INSTRUMENT" schemaName="public"/>

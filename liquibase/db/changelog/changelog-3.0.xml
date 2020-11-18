@@ -1,17 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
-    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.9.xsd ">
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd ">
 
 
-    <changeSet id="290620203" author="Khoshimov">
-        <tagDatabase tag="changelog-2.0"/>
+    <changeSet id="290620204" author="Khoshimov">
+        <tagDatabase tag="changelog-3.0"/>
     </changeSet>
 
 
-    <changeSet id="1806202011" author="Khoshimov">
+    <changeSet id="1806202012" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="Student" schemaName="public"/>
@@ -39,7 +39,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="180620202" author="Khoshimov">
+    <changeSet id="180620203" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="Course" schemaName="public"/>
@@ -68,7 +68,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="180620203" author="Khoshimov">
+    <changeSet id="180620204" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="Lesson" schemaName="public"/>
@@ -97,7 +97,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="180720205" author="Khoshimov">
+    <changeSet id="180720206" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="Teacher" schemaName="public"/>
@@ -126,7 +126,7 @@
     </changeSet>
 
 
-    <changeSet id="180620209" author="Khoshimov">
+    <changeSet id="1806202010" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="Lesson_to_Instrument" schemaName="public"/>
@@ -136,8 +136,8 @@
         <sql>
             create table Lesson_to_Instrument(
             id serial primary key,
-            lesson_id int,
-            instrument_id int
+            lesson_idd int,
+            instrument_idd int
             );
         </sql>
         <rollback>
@@ -147,7 +147,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="180620210" author="Khoshimov">
+    <changeSet id="180620211" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="Users" schemaName="public"/>
@@ -171,7 +171,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="210720213" author="Khoshimov">
+    <changeSet id="210720214" author="Khoshimov">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="student_to_course" schemaName="public"/>

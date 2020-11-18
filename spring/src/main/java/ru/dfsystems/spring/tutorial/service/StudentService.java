@@ -30,7 +30,7 @@ public class StudentService  extends BaseService<StudentListDto, StudentDto, Stu
         link.setStudentIdd(idd);
         link.setCourseIdd(courseIdd);
         // потом переделать
-        link.setSuccess(Boolean.TRUE);
+
         studentToCourseDao.insert(link);
     }
 
